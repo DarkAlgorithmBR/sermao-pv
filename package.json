@@ -1,0 +1,20 @@
+{
+  "name": "150-mapas-de-adoracao-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Página de vendas dos 150 Mapas de Adoração ao Senhor",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "predev": "npm run build",
+    "dev": "wrangler dev --port=4173",
+    "prepreview": "npm run build",
+    "preview": "wrangler dev --port=4173",
+    "predeploy": "npm run build",
+    "deploy": "wrangler deploy",
+    "predeploy:production": "npm run build",
+    "deploy:production": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.47.0"
+  }
+}

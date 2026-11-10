@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sermao-pv",
+  "compatibility_date": "2026-11-10",
+  "build": { "command": "npm run build" },
+  "assets": { "directory": "./dist" }
+}
